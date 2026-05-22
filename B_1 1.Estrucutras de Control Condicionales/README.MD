@@ -103,13 +103,14 @@ if (a > b) {
 
 ---
 
-## 🔗 OPERADORES BOOLEANOS
+## 🔘 Operadores booleanos en Java
 
-| Operador | Significado |
-|----------|------------|
-| `&&`     | AND (y) |
-| `||`     | OR (o) |
-| `!`      | NOT (negación) |
+| A | B | `&&` AND | `||` OR | `!A` NOT | `A ^ B` XOR |
+|---|---|----------|---------|----------|-------------|
+| T | T | T        | T       | F        | F           |
+| T | F | F        | T       | F        | T           |
+| F | T | F        | T       | T        | T           |
+| F | F | F        | F       | T        | F           |
 
 ### 🔍 Ejemplos
 
