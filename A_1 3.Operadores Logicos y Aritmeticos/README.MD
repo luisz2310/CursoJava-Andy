@@ -69,6 +69,15 @@ a || b  // OR  → true
 - `||` → OR (o)  
 - `!`  → NOT (negación)  
 
+## 🔘 Operadores booleanos en Java
+
+| A | B |  AND |  OR |  XOR |
+|---|---|----------|---------|---------|
+| T | T | T        | T       | F       |
+| T | F | F        | T       | T       |
+| F | T | F        | T       | T       |
+| F | F | F        | F       | F       |
+
 ---
 
 ## ✅ Ejemplo combinado
