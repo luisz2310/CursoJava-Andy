@@ -5,6 +5,8 @@ Proyecto de práctica enfocado en los fundamentos de Java, organizado de forma p
 ---
 
 ## 📂 Estructura del proyecto
+
+```bash
 │
 ├───A_1 1.Tipos de Datos en Java
 ├───A_1 2.Declara e Imprimir Variables
@@ -16,7 +18,7 @@ Proyecto de práctica enfocado en los fundamentos de Java, organizado de forma p
 ├───B_2 2.Convertir un diagrama en un for
 │
 └───tareas
-
+```
 ---
 
 ## 🧭 Ruta de aprendizaje
