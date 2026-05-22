@@ -1,4 +1,4 @@
-package teoria.estructuras_de_control.repeticion;
+package u1_estructuras_de_control.repeticion;
 
 public class Clase2_EstructurasdeControl_Repeticion {
 

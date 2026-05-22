@@ -15,7 +15,7 @@ Permite tomar decisiones y controlar el flujo del programa.
 ## 📂 Estructura
 
 ```bash
-estructuras_de_control/
+u1_estructuras_de_control/
 ├── condicionales/
 │   └── Clase1_EstructurasDeControl_Condicionales.java
 │
