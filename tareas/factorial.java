@@ -1,5 +1,3 @@
-package tareas;
-
 public class factorial {
     // factorial de 5 
 

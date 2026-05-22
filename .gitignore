@@ -15,6 +15,8 @@
 bin/
 target/
 .metadata/
+src/
+
 
 # =========================
 # IntelliJ IDEA files

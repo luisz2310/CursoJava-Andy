@@ -1,5 +1,3 @@
-package tareas;
-
 public class multiplicarNumeros {
     public static void main(String[] args){
 int n1=5;
