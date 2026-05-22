@@ -21,9 +21,11 @@ En esta unidad aprenderás:
 ```bash
 Unidad_1_Java_Basico/
 ├── src/
-│   ├── teoria/
-│   │   └── estructurasdecontrol/
-│   │       └── Clase1_EstructurasDeControl_Condicionales.java
+│   ├── teoria
+│   │   └───estructuras_de_control
+│   │       ├──condicionales
+│   │       │	└─Clase1_EstructurasDeControl_Condicionales
+│   │       └───repeticion
 │   │
 │   └── ejercicios/
 │       └── parte1/

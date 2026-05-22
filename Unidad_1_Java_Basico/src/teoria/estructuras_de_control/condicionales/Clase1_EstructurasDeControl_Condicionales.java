@@ -1,4 +1,4 @@
-package teoria.estructurasdecontrol;
+package teoria.estructuras_de_control.condicionales;
 
 /**
  * 📘 CLASE: Estructuras de Control - Condicionales
