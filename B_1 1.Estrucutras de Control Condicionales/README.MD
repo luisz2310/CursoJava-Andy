@@ -105,6 +105,10 @@ if (a > b) {
 
 ## 🔘 Operadores booleanos en Java
 
+- `&&` → AND (y)  
+- `||` → OR (o)  
+- `!`  → NOT (negación)  
+
 | A | B |  AND |  OR |  XOR |
 |---|---|----------|---------|---------|
 | T | T | T        | T       | F       |
