@@ -9,7 +9,7 @@
 ├───B_1 1.Estrucutras de Control Condicionales
 │
 ├───B_2 1.Estrucutras de Control de Repeticion
-├───B_2 2.Convertir un diagrama en un for
+├───B_2 2.Convertir el ciclo de un diagrama en un for
 │
 └───tareas
 ```
