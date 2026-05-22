@@ -35,7 +35,6 @@ Proyecto de práctica enfocado en los fundamentos de Java, combinando lógica de
 ### Tipos de datos en Java
 📁 A_1 1.Tipos de Datos en Java  
 
-**Resumen:**
 - Variables y tipos de datos básicos  
 - Números, texto y booleanos  
 - Representación en memoria  
@@ -46,7 +45,6 @@ Proyecto de práctica enfocado en los fundamentos de Java, combinando lógica de
 ### Variables y salida en consola
 📁 A_1 2.Declara e Imprimir Variables  
 
-**Resumen:**
 - Cómo crear variables en Java  
 - Asignación de valores  
 - Uso de `System.out.println`  
@@ -57,7 +55,6 @@ Proyecto de práctica enfocado en los fundamentos de Java, combinando lógica de
 ### Operadores
 📁 A_1 3.Operadores Logicos y Aritmeticos  
 
-**Resumen:**
 - Operadores aritméticos (`+ - * / %`)  
 - Operadores lógicos (`&& || !`)  
 - Evaluación de expresiones  
@@ -68,7 +65,6 @@ Proyecto de práctica enfocado en los fundamentos de Java, combinando lógica de
 ### Condicionales
 📁 B_1 1.Estrucutras de Control Condicionales  
 
-**Resumen:**
 - Estructuras `if`, `else`, `else if`  
 - Toma de decisiones en el flujo del programa  
 - Comparación de valores  
@@ -79,7 +75,6 @@ Proyecto de práctica enfocado en los fundamentos de Java, combinando lógica de
 📁 B_2 1.Estrucutras de Control de Repeticion  
 📁 B_2 2.Convertir un diagrama en un for  
 
-**Resumen:**
 - Estructuras de repetición (`for`, `while`)  
 - Ejecución repetitiva de instrucciones  
 - Traducción de diagramas de flujo a ciclos  
