@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ☕ Java Practice Project – Unidad 1
 
 Proyecto de práctica enfocado en los **fundamentos de Java**.
@@ -21,39 +20,22 @@ En esta unidad aprenderás:
 
 ```bash
 Unidad_1_Java_Basico/
-├─ src/
-   ├── teoria/
-   │   └── estructurasdecontrol/
-   │       └── Clase1_EstructurasDeControl_Condicionales.java
-   │
-   └── ejercicios/
-       └── parte1/
-           ├── NumeroMayor.java
-           ├── NumerosImpares.java
-           └── SumaPrimerosNnumeros.java
-
-=======
-# 📂 Estructura del Proyecto – CursoJava-Andy
-
----
-
-## 🗂️ Estructura
-
-```bash
-src/
-├── teoria/
-│   └── Clase1_EstructurasDeControl_OperadoresLogicos.java
-└── ejercicios/
-    └── parte1/
-        ├── NumeroMayor.java
-        ├── NumerosImpares.java
-        └── SumaPrimerosNnumeros.java
->>>>>>> 66e22fa1185f722ce43e247f661dde2e7b9c7e8a
+├── src/
+│   ├── teoria/
+│   │   └── estructurasdecontrol/
+│   │       └── Clase1_EstructurasDeControl_Condicionales.java
+│   │
+│   └── ejercicios/
+│       └── parte1/
+│           ├── NumeroMayor.java
+│           ├── NumerosImpares.java
+│           └── SumaPrimerosNnumeros.java
+│
+└── bin/ (archivos compilados)
 ```
 
 ---
 
-<<<<<<< HEAD
 ## 🧭 ¿Por dónde empezar?
 
 ### 1️⃣ Teoría
@@ -78,45 +60,17 @@ Aplica lo aprendido:
 - `SumaPrimerosNnumeros` → ciclo `for`
 
 ✔ Practica después de la teoría
-=======
-## 📘 ¿Dónde ir?
-
-### 👉 `teoria/`
-- Explicación de conceptos
-- Ejemplo base de:
-  - `if`, `else`, `else if`
-  - Operadores lógicos
-
-✔ Empieza aquí
-
----
-
-### 👉 `ejercicios/parte1/`
-- Práctica de lo aprendido
-
-Contiene:
-- `NumeroMayor` → comparaciones
-- `NumerosImpares` → par/impar (`%`)
-- `SumaPrimerosNnumeros` → ciclo `for`
-
-✔ Ve aquí después de teoría
->>>>>>> 66e22fa1185f722ce43e247f661dde2e7b9c7e8a
 
 ---
 
 ## 🔄 Flujo recomendado
 
 ```text
-<<<<<<< HEAD
 Teoría → Ejercicios → Modificar valores → Ejecutar
-=======
-teoria → ejercicios → modificar valores → ejecutar
->>>>>>> 66e22fa1185f722ce43e247f661dde2e7b9c7e8a
 ```
 
 ---
 
-<<<<<<< HEAD
 ## 🧪 Ejercicios incluidos
 
 ### 🔢 NumeroMayor
@@ -172,10 +126,3 @@ O ejecuta directamente desde tu IDE (IntelliJ, Eclipse, VS Code)
 
 💻 Principiante  
 📚 Fundamentos de programación en Java
-=======
-## 🚀 Tip rápido
-
-Cada archivo tiene su propio `main`, puedes ejecutarlos de forma independiente.
-
----
->>>>>>> 66e22fa1185f722ce43e247f661dde2e7b9c7e8a
