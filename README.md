@@ -1,61 +1,127 @@
-# Java Practice Project
+# ☕ Java Practice Project – Unidad 1
 
-This project contains basic Java examples for learning programming fundamentals such as:
+Proyecto de práctica enfocado en los **fundamentos de Java**.
 
-- Variables and data types
-- Conditions (if / else)
-- Loops (for / while)
-- Basic algorithms
+---
 
-# 📘 Unidad 1 - Fundamentos de Java
+## 📘 ¿Qué incluye?
 
-Este paquete contiene ejemplos básicos para entender:
-- Condiciones (if / else)
+En esta unidad aprenderás:
+
+- Variables y tipos de datos
+- Condicionales (`if`, `else`, `else if`)
 - Operadores lógicos
-- Ciclos (for)
-- Variables y operaciones simples
+- Ciclos (`for`)
+- Lógica básica de programación
 
 ---
 
-## 📂 1. Comparación de números (NumeroMayor)
+## 📂 Estructura del Proyecto
 
-Este programa compara dos números (`n` y `m`) y muestra cuál es mayor o si son iguales.
+```bash
+Unidad_1_Java_Basico/
+├─ src/
+   ├── teoria/
+   │   └── estructurasdecontrol/
+   │       └── Clase1_EstructurasDeControl_Condicionales.java
+   │
+   └── ejercicios/
+       └── parte1/
+           ├── NumeroMayor.java
+           ├── NumerosImpares.java
+           └── SumaPrimerosNnumeros.java
 
-### 🧠 Conceptos clave:
-- `if` evalúa todas las condiciones por separado
-- `else if` detiene la evaluación en la primera condición verdadera
-- Importante: usar `else if` cuando solo se necesita **un resultado**
-
-### ⚠️ Ejemplo importante:
-Si usamos solo `if`, pueden ejecutarse múltiples condiciones al mismo tiempo, lo que puede generar resultados incorrectos.
-
----
-
-## 📂 2. Par o impar (NumerosImpares)
-
-Este programa determina si un número es par o impar usando el residuo de la división.
-
-### 🧠 Conceptos clave:
-- Operador módulo `%`
-- Si `numero % 2 == 0` → es PAR
-- Si no → es IMPAR
+```
 
 ---
 
-## 📂 3. Ciclo FOR paso a paso (SumaPrimerosNnumeros)
+## 🧭 ¿Por dónde empezar?
 
-Este programa muestra cómo se construye un ciclo `for` desde una idea básica hasta su forma final.
+### 1️⃣ Teoría
+📍 `src/teoria/estructurasdecontrol/`
 
-### 🧠 Conceptos clave:
-- Un ciclo permite repetir instrucciones
-- El `for` se compone de:
-  - inicialización
-  - condición
-  - incremento
-- Evolución desde lógica manual → estructura optimizada
+- Explica:
+  - `if`, `else`, `else if`
+  - operadores lógicos (`&&`, `||`, `!`)
+  - `switch`
 
-### 📌 Idea principal:
-Imprimir números desde 0 hasta N usando un ciclo eficiente.
+✔ Empieza aquí para entender la base
 
 ---
 
+### 2️⃣ Ejercicios
+📍 `src/ejercicios/parte1/`
+
+Aplica lo aprendido:
+
+- `NumeroMayor` → comparaciones (`if`)
+- `NumerosImpares` → uso de `%`
+- `SumaPrimerosNnumeros` → ciclo `for`
+
+✔ Practica después de la teoría
+
+---
+
+## 🔄 Flujo recomendado
+
+```text
+Teoría → Ejercicios → Modificar valores → Ejecutar
+```
+
+---
+
+## 🧪 Ejercicios incluidos
+
+### 🔢 NumeroMayor
+Compara dos números y muestra:
+- cuál es mayor
+- o si son iguales
+
+💡 Aprendes:
+- diferencia entre `if` y `else if`
+
+---
+
+### 🔁 NumerosImpares
+Determina si un número es:
+- PAR
+- IMPAR
+
+💡 Aprendes:
+- operador `%` (módulo)
+
+---
+
+### 🔄 SumaPrimerosNnumeros
+Imprime números de `0` a `N`
+
+💡 Aprendes:
+- construcción de un `for` paso a paso
+
+---
+
+## 🚀 Cómo ejecutar
+
+Desde consola:
+
+```bash
+javac NombreArchivo.java
+java NombreArchivo
+```
+
+O ejecuta directamente desde tu IDE (IntelliJ, Eclipse, VS Code)
+
+---
+
+## 💡 Tips
+
+- Modifica los valores (`n`, `m`, `numero`) para probar casos
+- Ejecuta cada archivo por separado (cada uno tiene su `main`)
+- Enfócate en entender la lógica, no solo el resultado
+
+---
+
+## 📌 Nivel
+
+💻 Principiante  
+📚 Fundamentos de programación en Java
