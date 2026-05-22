@@ -1,9 +1,8 @@
 # ☕ Java Practice Project – Unidad 1
 
-Proyecto de práctica enfocado en los fundamentos de Java, organizado de forma progresiva para construir una base sólida en programación: desde tipos de datos hasta estructuras de control.
+Proyecto de práctica enfocado en los fundamentos de Java, combinando lógica de diagramas de flujo con estructuras básicas del lenguaje. El objetivo es aprender a traducir procesos visuales a código funcional.
 
 ---
-
 ## 📂 Estructura del proyecto
 
 ```bash
@@ -21,25 +20,58 @@ Proyecto de práctica enfocado en los fundamentos de Java, organizado de forma p
 ```
 ---
 
-### Fundamentos de Java
+### Lógica de diagramas → Java
+📁 Convertir un diagrama en código Java
+
+- Equivalentes entre pasos de un diagrama de flujo y Java  
+- Inicio → `main()`  
+- Procesos → instrucciones secuenciales  
+- Decisiones → `if / else`  
+- Ciclos → `for / while`  
+- Fin → final del programa  
+
+---
+
+### Tipos de datos en Java
 📁 A_1 1.Tipos de Datos en Java  
+
+**Resumen:**
+- Variables y tipos de datos básicos  
+- Números, texto y booleanos  
+- Representación en memoria  
+- Base para construir cualquier programa  
+
+---
+
+### Variables y salida en consola
 📁 A_1 2.Declara e Imprimir Variables  
 
-Introducción a tipos de datos, variables y salida en consola. Base esencial del lenguaje.
+**Resumen:**
+- Cómo crear variables en Java  
+- Asignación de valores  
+- Uso de `System.out.println`  
+- Visualización de datos en consola  
 
 ---
 
 ### Operadores
 📁 A_1 3.Operadores Logicos y Aritmeticos  
 
-Uso de operadores aritméticos y lógicos para construir expresiones y evaluaciones básicas.
+**Resumen:**
+- Operadores aritméticos (`+ - * / %`)  
+- Operadores lógicos (`&& || !`)  
+- Evaluación de expresiones  
+- Construcción de lógica básica  
 
 ---
 
 ### Condicionales
 📁 B_1 1.Estrucutras de Control Condicionales  
 
-Estructuras `if`, `else`, `else if` para toma de decisiones en el flujo del programa.
+**Resumen:**
+- Estructuras `if`, `else`, `else if`  
+- Toma de decisiones en el flujo del programa  
+- Comparación de valores  
 
 ---
 
@@ -47,7 +79,9 @@ Estructuras `if`, `else`, `else if` para toma de decisiones en el flujo del prog
 📁 B_2 1.Estrucutras de Control de Repeticion  
 📁 B_2 2.Convertir un diagrama en un for  
 
-Introducción a la repetición con ciclos y conversión de diagramas a código `for`.
+**Resumen:**
+- Estructuras de repetición (`for`, `while`)  
+- Ejecución repetitiva de instrucciones  
+- Traducción de diagramas de flujo a ciclos  
 
 ---
-
