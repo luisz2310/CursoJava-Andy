@@ -105,12 +105,12 @@ if (a > b) {
 
 ## 🔘 Operadores booleanos en Java
 
-| A | B | `&&` AND | `||` OR | `!A` NOT | `A ^ B` XOR |
-|---|---|----------|---------|----------|-------------|
-| T | T | T        | T       | F        | F           |
-| T | F | F        | T       | F        | T           |
-| F | T | F        | T       | T        | T           |
-| F | F | F        | F       | T        | F           |
+| A | B |  AND |  OR |  XOR |
+|---|---|----------|---------|---------|
+| T | T | T        | T       | F       |
+| T | F | F        | T       | T       |
+| F | T | F        | T       | T       |
+| F | F | F        | F       | F       |
 
 ### 🔍 Ejemplos
 
