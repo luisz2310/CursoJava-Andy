@@ -8,6 +8,7 @@ Convertir una lógica basada en `if` (diagrama de flujo) en un ciclo `for`.
 ## 🔹 Paso 1: Lógica con IF (sin ciclo)
 Se empieza con repetición manual:
 
+```java
 int n = 4;
 int e = 0;
 
@@ -17,7 +18,7 @@ e = e + 1;
 if (e <= n) {
     // repetir manualmente
 }
-
+```
 👉 Problema: no hay repetición automática.
 
 ---
@@ -33,26 +34,32 @@ Se identifica:
 ---
 
 ## 🔹 Paso 3: IF → FOR base
+
+```java
 for (; e <= n; ) {
     System.out.println(e);
     e++;
 }
-
+```
 ---
 
 ## 🔹 Paso 4: mover inicialización
+
+```java
 for (int e = 0; e <= n; ) {
     System.out.println(e);
     e++;
 }
-
+```
 ---
 
 ## 🔹 Paso 5: mover incremento (final)
+
+```java
 for (int e = 0; e <= n; e++) {
     System.out.println(e);
 }
-
+```
 ---
 
 ## 🚀 Resultado
