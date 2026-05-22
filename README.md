@@ -1,8 +1,3 @@
-# ☕ Java Practice Project – Unidad 1
-
-Proyecto de práctica enfocado en los fundamentos de Java, combinando lógica de diagramas de flujo con estructuras básicas del lenguaje. El objetivo es aprender a traducir procesos visuales a código funcional.
-
----
 ## 📂 Estructura del proyecto
 
 ```bash
