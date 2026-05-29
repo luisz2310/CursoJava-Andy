@@ -1,197 +1,250 @@
 import java.util.Random;
 
 /**
- * 📘 CLASE: Estructuras de Control - Repetición
+ * =========================================================
+ * 📘 CLASE 2: Estructuras de Control - Repetición
+ * =========================================================
  *
- * Esta clase explica las principales estructuras de repetición en Java:
+ * 🧠 Temas:
  * - while
  * - do-while
  * - for
+ * - incrementos y decrementos
+ * - operadores +=, -=, *=, /=
  *
- * También incluye:
- * - operadores de incremento/decremento (++, --)
- * - operadores compuestos (+=, -=, *=, /=)
- *
+ * 💡 Objetivo:
+ * Entender cómo repetir acciones en Java usando ciclos
+ * =========================================================
  */
 public class Clase2_EstructurasdeControl_Repeticion {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		/*
-		====================================================
-		🔁 WHILE
-		====================================================
-		- Repite mientras la condición sea TRUE
-		- Se usa cuando NO sabes cuántas veces se repetirá
-		*/
+        /**
+         * =====================================================
+         * 🔁 WHILE
+         * =====================================================
+         *
+         * Repite una acción mientras la condición sea TRUE
+         *
+         * while (CONDICIÓN) {
+         *     // código que se repite
+         * }
+         *
+         * 📌 La condición SIEMPRE es un booleano
+         *
+         * 💡 Se usa cuando NO sabes cuántas veces se repetirá
+         */
 
-		int i = 0;
-		boolean x = true;
+        int i = 0;
+        boolean x = true;
 
-		while (x) {
-			System.out.println("SE REPITE: " + i);
-			i = i + 1;
+        while (x) {
+            System.out.println("SE REPITE!: " + i);
+            i = i + 1;
 
-			if (i == 5) {
-				x = false; // detener ciclo
-			}
-		}
+            if (i == 5) {
+                x = false;
+            }
+        }
 
-		System.out.println("Fin del while");
+        System.out.println("Fin del while");
 
-		/*
-		✔ Forma más común usando condición directa
-		*/
+        // -----------------------------------------------------
 
-		i = 0;
-		while (i <= 4) {
-			System.out.println("SE REPITE: " + i);
-			i = i + 1;
-		}
+        i = 0;
+        while (i <= 4) {
+            System.out.println("SE REPITE!: " + i);
+            i = i + 1;
+        }
 
-		System.out.println("Fin del while");
+        System.out.println("Fin del while");
 
-		/*
-		🎲 Ejemplo: números aleatorios hasta que salga 999
-		*/
+        // -----------------------------------------------------
+        // 🎲 WHILE CON RANDOM
 
-		boolean flag = true;
-		i = 0;
+        // imprimir números aleatorios entre 1 y 1000 hasta que salga 999
 
-		while (flag) {
-			Random r = new Random();
-			int a = r.nextInt(1000); // 0 - 999
-			i++;
+        boolean flag = true;
+        i = 0;
 
-			if (a == 999) {
-				flag = false;
-			}
-		}
+        while (flag) {
+            Random r = new Random();
+            int a = r.nextInt(1000);
 
-		System.out.println("Intentos: " + i);
-		System.out.println("Fin del while");
+            i = i + 1;
 
-		/*
-		====================================================
-		🔁 DO - WHILE
-		====================================================
-		- Primero ejecuta y luego evalúa
-		- SIEMPRE se ejecuta al menos 1 vez
-		*/
+            if (a == 999) {
+                flag = false;
+            }
+        }
 
-		i = 5;
+        System.out.println("i: " + i);
+        System.out.println("Fin del while");
 
-		do {
-			System.out.println("DO-WHILE: " + i);
-			i++;
-		} while (i <= 4);
+        /**
+         * =====================================================
+         * 🔁 DO - WHILE
+         * =====================================================
+         *
+         * 📌 Primero ejecuta y luego evalúa la condición
+         *
+         * ✔ Se ejecuta AL MENOS 1 vez siempre
+         *
+         * 💡 Se usa cuando necesitas una ejecución obligatoria
+         */
 
-		/*
-		❗ Comparación con while (no entra)
-		*/
+        i = 5;
 
-		i = 5;
-		while (i <= 4) {
-			System.out.println("WHILE: " + i);
-			i++;
-		}
+        do {
+            System.out.println("SE REPITE en do-while!: " + i);
+            i = i + 1;
+        } while (i <= 4);
 
-		/*
-		====================================================
-		🔁 FOR
-		====================================================
-		Estructura:
-		for (inicio; condición; incremento)
+        i = 5;
 
-		- inicio: se ejecuta una vez
-		- condición: controla el ciclo
-		- incremento: se ejecuta cada vuelta
-		*/
+        while (i <= 4) {
+            System.out.println("SE REPITE en while!: " + i);
+            i = i + 1;
+        }
 
-		int j = 0;
+        /**
+         * =====================================================
+         * 🔁 FOR
+         * =====================================================
+         *
+         * 📌 Estructura:
+         *
+         * for (inicio; condición; actualización) {
+         *     // código
+         * }
+         *
+         * 1. inicio → se ejecuta una sola vez
+         * 2. condición → controla el ciclo
+         * 3. actualización → se ejecuta al final de cada vuelta
+         *
+         * 💡 Se usa cuando sabes cuántas veces repetir
+         */
 
-		// Forma manual
-		for (; j < 10;) {
-			System.out.println("j: " + j);
-			j = j + 1;
-		}
+        int j = 0;
 
-		// Agregando incremento
-		j = 0;
-		for (; j < 10; j = j + 1) {
-			System.out.println("j: " + j);
-		}
+        for (; j < 10; ) {
+            System.out.println("imprime j: " + j);
+            j = j + 1;
+        }
 
-		// Forma completa
-		for (j = 0; j < 10; j = j + 1) {
-			System.out.println("j: " + j);
-		}
+        j = 0;
 
-		// Declarando variable dentro del for
-		for (int z = 0; z < 10; z = z + 1) {
-			System.out.println("z: " + z);
-		}
+        for (; j < 10; j = j + 1) {
+            System.out.println("imprime j: " + j);
+        }
 
-		/*
-		====================================================
-		➕ OPERADORES DE INCREMENTO / DECREMENTO
-		====================================================
-		*/
+        for (j = 0; j < 10; j = j + 1) {
+            System.out.println("imprime j: " + j);
+        }
 
-		int p = 0;
+        for (int z = 0; z < 10; z = z + 1) {
+            System.out.println("imprime z: " + z);
+        }
 
-		// Post-incremento (usa valor y luego incrementa)
-		System.out.println(p++); // imprime 0
-		System.out.println(p);   // ahora vale 1
+        /**
+         * =====================================================
+         * ➕➖ INCREMENTO Y DECREMENTO
+         * =====================================================
+         *
+         * ✔ Reducir código al modificar variables
+         *
+         * i = i + 1   → i++
+         * i = i - 1   → i--
+         *
+         * ++ → incrementa en 1
+         * -- → decrementa en 1
+         */
 
-		// Pre-incremento (incrementa y luego usa valor)
-		p = 0;
-		System.out.println(++p); // imprime 1
+        int p = 0;
 
-		/*
-		====================================================
-		➕ OPERADORES COMPUESTOS
-		====================================================
-		*/
+        // POST-INCREMENTO / POST-DECREMENTO
+        // primero usa el valor, luego modifica
+        p++;
+        p--;
+        p = 0;
 
-		p = 0;
+        System.out.println(p++);
 
-		System.out.println(p += 2); // suma 2
-		System.out.println(p -= 1); // resta 1
-		System.out.println(p *= 3); // multiplica
-		System.out.println(p /= 2); // divide
+        // PRE-INCREMENTO / PRE-DECREMENTO
+        // primero modifica, luego usa el valor
+        ++p;
+        --p;
+        p = 0;
 
-		/*
-		✔ Usando otra variable
-		*/
+        System.out.println(++p);
 
-		int a = 10;
-		p = 10;
+        /**
+         * =====================================================
+         * ⚡ OPERADORES COMPUESTOS
+         * =====================================================
+         *
+         * ✔ Simplifican operaciones matemáticas
+         *
+         * p = p + 2  → p += 2
+         * p = p - 2  → p -= 2
+         * p = p * 3  → p *= 3
+         * p = p / 3  → p /= 3
+         *
+         * 📌 Primero se calcula, luego se asigna
+         */
 
-		System.out.println(p += a);
-		System.out.println(p -= a);
-		System.out.println(p *= a);
-		System.out.println(p /= a);
+        p = 0;
 
-		/*
-		====================================================
-		🚀 EJEMPLOS COMUNES DE FOR
-		====================================================
-		*/
+        System.out.println(p += 2);
+        System.out.println(p += 2);
+        System.out.println(p += 2);
+        System.out.println(p += 3);
+        System.out.println(p -= 5);
+        System.out.println(p *= 5);
+        System.out.println(p /= 5);
 
-		// Contar hacia arriba
-		for (int z = 0; z < 10; z++) {
-			System.out.println("z: " + z);
-		}
+        /**
+         * =====================================================
+         * 🔗 OPERADORES CON VARIABLES
+         * =====================================================
+         *
+         * a = 10
+         * p = 0
+         *
+         * p += a  → suma a p
+         * p -= a  → resta a p
+         * p *= a  → multiplica
+         * p /= a  → divide
+         */
 
-		// Contar hacia abajo
-		for (int z = 10; z > 0; z--) {
-			System.out.println("z: " + z);
-		}
+        int a = 10;
+        p = 10;
 
-		// Incrementar de 2 en 2
-		for (int z = 0; z < 100; z += 2) {
-			System.out.println("z: " + z);
-		}
-	}
+        System.out.println(p += a);
+        System.out.println(p -= a);
+        System.out.println(p /= a);
+        System.out.println(p *= a);
+
+        /**
+         * =====================================================
+         * 🔁 FOR (CASOS REALES)
+         * =====================================================
+         */
+
+        // incremento normal
+        for (int z = 0; z < 10; z++) {
+            System.out.println("imprime z: " + z);
+        }
+
+        // decremento
+        for (int z = 10; z > 0; z--) {
+            System.out.println("imprime z: " + z);
+        }
+
+        // incremento de 2 en 2
+        for (int z = 0; z < 100; z += 2) {
+            System.out.println("imprime z: " + z);
+        }
+    }
 }
