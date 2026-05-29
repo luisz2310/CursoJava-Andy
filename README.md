@@ -70,8 +70,7 @@
 📁 B_2 1.Estrucutras de Control de Repeticion  
 📁 B_2 2.Convertir un diagrama en un for  
 
-- Estructuras de repetición (`for`, `while`)  
-- Ejecución repetitiva de instrucciones  
-- Traducción de diagramas de flujo a ciclos  
-
+- Estructuras de repetición (`for`, `while`, `do-while`)  
+- Diferencias entre `while`, `do-while`  y `for`
+- Incremento y decremento de variables 
 ---
