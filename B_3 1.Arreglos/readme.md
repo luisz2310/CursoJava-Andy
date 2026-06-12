@@ -126,42 +126,6 @@ for (int i = 0; i < arr.length; i++) {
 }
 ```
 
----
-
-## 🔥 Ejemplo: encontrar el mayor
-
-```java
-int[] arr = {1, 2, 99, 4, 50};
-
-int max = arr[0];
-
-for (int i = 1; i < arr.length; i++) {
-    if (arr[i] > max) {
-        max = arr[i];
-    }
-}
-
-System.out.println("Mayor: " + max);
-```
-
----
-
-## ➕ Ejemplo: sumar elementos
-
-```java
-int[] arr = {5, 10, 15, 20};
-
-int suma = 0;
-
-for (int i = 0; i < arr.length; i++) {
-    suma += arr[i];
-}
-
-System.out.println("Suma: " + suma);
-```
-
----
-
 ## 🚨 Errores comunes
 
 ❌ Acceder fuera del rango:
