@@ -11,6 +11,8 @@
 ├───B_2 1.Estrucutras de Control de Repeticion
 ├───B_2 2.Convertir el ciclo de un diagrama en un for
 │
+├───C_1 1.Arreglos
+│
 └───tareas
 ```
 ---
@@ -73,4 +75,14 @@
 - Estructuras de repetición (`for`, `while`, `do-while`)  
 - Diferencias entre `while`, `do-while`  y `for`
 - Incremento y decremento de variables 
+---
+
+### 📦 Arreglos 
+📁 C_1 1.Arreglos
+
+-Estructura para almacenar múltiples valores del mismo tipo
+-Índices (empiezan en 0)
+-Propiedad length
+-Acceso y modificación: arr[i]
+-Recorrido con for
 ---
