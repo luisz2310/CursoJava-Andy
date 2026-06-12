@@ -80,9 +80,9 @@
 ### 📦 Arreglos 
 📁 C_1 1.Arreglos
 
--Estructura para almacenar múltiples valores del mismo tipo
--Índices (empiezan en 0)
--Propiedad length
--Acceso y modificación: arr[i]
--Recorrido con for
+- Estructura para almacenar múltiples valores del mismo tipo
+- Índices (empiezan en 0)
+- Propiedad length
+- Acceso y modificación: arr[i]
+- Recorrido con for
 ---
