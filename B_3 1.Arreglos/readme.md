@@ -17,16 +17,6 @@ int[] numeros = {10, 20, 30, 40};
 
 ---
 
-## 🎯 Objetivo
-Aprender a:
-- Declarar arreglos
-- Inicializarlos
-- Acceder y modificar elementos
-- Recorrerlos con ciclos
-- Evitar errores comunes
-
----
-
 ## 🧱 Declaración e inicialización
 
 ```java
