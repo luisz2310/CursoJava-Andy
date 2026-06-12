@@ -1,92 +1,189 @@
 # 📘 Java Cheatsheet – Arreglos (Arrays)
 
-## 🧠 Descripción
-Los arreglos en Java almacenan múltiples valores del mismo tipo en una sola variable. Son fundamentales para ciclos, algoritmos y manejo de datos.
+## 🧠 ¿Qué es un arreglo?
+Un arreglo (array) en Java es una estructura de datos que almacena múltiples valores del **mismo tipo** en una sola variable. Cada valor se guarda en una posición llamada **índice**.
 
-## 🎯 Objetivo
-Aprender a declarar, inicializar, acceder, modificar y recorrer arreglos usando índices y `length`.
+📌 Características clave:
+- Todos los elementos son del mismo tipo
+- Tamaño fijo (no cambia después de crearse)
+- Acceso por índices
+- Empiezan en 0
+
+Ejemplo:
+
+```java
+int[] numeros = {10, 20, 30, 40};
+```
 
 ---
 
-## 📦 Concepto
-Un arreglo guarda valores en posiciones llamadas índices:
-- Empiezan en 0
-- Terminan en length - 1
-
-Ejemplo:
-int[] numeros = {1, 2, 3, 4, 5};
+## 🎯 Objetivo
+Aprender a:
+- Declarar arreglos
+- Inicializarlos
+- Acceder y modificar elementos
+- Recorrerlos con ciclos
+- Evitar errores comunes
 
 ---
 
 ## 🧱 Declaración e inicialización
-int[] arr;  
-int[] arr1 = {1, 2, 3, 4};  
-int[] arr2 = new int[5]; // {0,0,0,0,0}
+
+```java
+// Solo declaración
+int[] arr;
+
+// Inicialización con valores
+int[] arr1 = {1, 2, 3, 4, 5};
+
+// Inicialización con tamaño fijo (valores por defecto = 0)
+int[] arr2 = new int[5];
+```
+
+📌 Resultado arr2:
+
+```java
+{0, 0, 0, 0, 0}
+```
 
 ---
 
-## 📏 Tamaño del arreglo (length)
-int[] arr = {1, 2, 3};
-System.out.println(arr.length);
+## 📏 Propiedad length (tamaño)
 
-📌 El tamaño es fijo y no se puede cambiar.
+```java
+int[] arr = {5, 10, 15};
+
+System.out.println(arr.length); // 3
+```
+
+📌 IMPORTANTE:
+- length es fijo
+- no se puede modificar
+- representa la cantidad de elementos
 
 ---
 
-## 🎯 Acceso a elementos
+## 🎯 Índices del arreglo
+
+```java
 int[] arr = {10, 20, 30};
+```
 
-arr[0]; // 10  
-arr[2]; // 30  
+```bash
+arr[0] → 10
+arr[1] → 20
+arr[2] → 30
+```
 
-❌ Error:
-arr[10]; // fuera de rango
+📌 Regla clave:
+Último índice = length - 1
+
+❌ Error común:
+
+```java
+arr[3]; // fuera de rango → error en runtime
+```
 
 ---
 
 ## ✏️ Modificar valores
+
+```java
 int[] arr = {1, 2, 3};
 
 arr[0] = 100;
 arr[2] = 999;
+```
+
+📌 El arreglo cambia directamente en memoria.
 
 ---
 
-## 🔁 Recorrer arreglo
-int[] arr = {1, 2, 3, 4, 5};
+## 🔁 Recorrer un arreglo
 
+```java
 for (int i = 0; i < arr.length; i++) {
     System.out.println(arr[i]);
 }
+```
+
+📌 Esto permite acceder a todos los elementos uno por uno.
 
 ---
 
-## 🧠 Ejemplo completo
+## ⚡ Uso típico con for
+
+✔ Leer datos  
+✔ Modificar valores  
+✔ Buscar elementos  
+✔ Calcular suma o máximos  
+
+---
+
+## 🧠 Ejemplo completo (modificación + impresión)
+
+```java
 int[] arr = {1, 2, 3, 4, 5};
 
+// modificar valores
 for (int i = 0; i < arr.length; i++) {
     arr[i] = i * 10;
 }
 
+// imprimir resultados
 for (int i = 0; i < arr.length; i++) {
     System.out.println(arr[i]);
 }
+```
+
+---
+
+## 🔥 Ejemplo: encontrar el mayor
+
+```java
+int[] arr = {1, 2, 99, 4, 50};
+
+int max = arr[0];
+
+for (int i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+        max = arr[i];
+    }
+}
+
+System.out.println("Mayor: " + max);
+```
+
+---
+
+## ➕ Ejemplo: sumar elementos
+
+```java
+int[] arr = {5, 10, 15, 20};
+
+int suma = 0;
+
+for (int i = 0; i < arr.length; i++) {
+    suma += arr[i];
+}
+
+System.out.println("Suma: " + suma);
+```
 
 ---
 
 ## 🚨 Errores comunes
-- Acceder fuera de rango (arr[10])
-- Intentar cambiar tamaño (arr.length = 10 ❌)
-- Índices empiezan en 0
+
+❌ Acceder fuera del rango:
+
+```java
+arr[10];
+```
+❌ Intentar cambiar tamaño:
+
+```java
+arr.length = 10; // NO permitido
+```
+❌ Olvidar que inicia en 0
 
 ---
-
-## 🧪 Ejercicios
-- Encontrar el número mayor en un arreglo
-- Sumar todos los elementos
-- Llenar arreglo del 1 al 10 con for
-
----
-
-## 🚀 Conclusión
-Los arreglos son base fundamental en Java para manejar colecciones de datos y construir algoritmos eficientes.
