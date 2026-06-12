@@ -60,7 +60,7 @@
 ### Condicionales
 📁 B_1 1.Estrucutras de Control Condicionales  
 
-- Estructuras `if`, `else`, `else if`  
+- Estructuras `if`, `else`, `else if`, `switch`
 - Toma de decisiones en el flujo del programa  
 - Comparación de valores  
 
