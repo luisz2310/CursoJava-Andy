@@ -77,7 +77,8 @@
 - Incremento y decremento de variables 
 ---
 
-### 📦 Arreglos 
+### 📦 Arreglos
+
 📁 C_1 1.Arreglos
 
 - Estructura para almacenar múltiples valores del mismo tipo
@@ -85,4 +86,8 @@
 - Propiedad length
 - Acceso y modificación: arr[i]
 - Recorrido con for
+- Copia de arreglos con = (referencia, no copia real)
+- Copia real usando for
+- Concepto de memoria (variables vs arreglos)
+- Diferencia entre copia por valor y por referencia
 ---

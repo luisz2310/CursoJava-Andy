@@ -1,13 +1,15 @@
 # 📘 Java Cheatsheet – Arreglos (Arrays)
 
 ## 🧠 ¿Qué es un arreglo?
+
 Un arreglo (array) en Java es una estructura de datos que almacena múltiples valores del **mismo tipo** en una sola variable. Cada valor se guarda en una posición llamada **índice**.
 
 📌 Características clave:
-- Todos los elementos son del mismo tipo
-- Tamaño fijo (no cambia después de crearse)
-- Acceso por índices
-- Empiezan en 0
+
+* Todos los elementos son del mismo tipo
+* Tamaño fijo (no cambia después de crearse)
+* Acceso por índices
+* Empiezan en 0
 
 Ejemplo:
 
@@ -47,9 +49,10 @@ System.out.println(arr.length); // 3
 ```
 
 📌 IMPORTANTE:
-- length es fijo
-- no se puede modificar
-- representa la cantidad de elementos
+
+* length es fijo
+* no se puede modificar
+* representa la cantidad de elementos
 
 ---
 
@@ -103,10 +106,10 @@ for (int i = 0; i < arr.length; i++) {
 
 ## ⚡ Uso típico con for
 
-✔ Leer datos  
-✔ Modificar valores  
-✔ Buscar elementos  
-✔ Calcular suma o máximos  
+✔ Leer datos
+✔ Modificar valores
+✔ Buscar elementos
+✔ Calcular suma o máximos
 
 ---
 
@@ -126,6 +129,74 @@ for (int i = 0; i < arr.length; i++) {
 }
 ```
 
+---
+
+## 🧩 Copia de arreglos y referencia en memoria
+
+### 🔹 Copia con = (NO es copia real)
+
+```java
+int[] a = {1, 2, 3};
+int[] b = a;
+```
+
+🧠 Memoria:
+
+```bash
+{a → [1][2][3]}
+{b → a}
+```
+
+👉 Ambos apuntan al mismo arreglo.
+
+```java
+b[0] = 100;
+```
+
+🧠 Resultado:
+
+```bash
+{a → [100][2][3]}
+{b → a}
+```
+
+❗ Cambiar uno afecta al otro.
+
+---
+
+### 🔹 Copia real con for
+
+```java
+int[] a = {1, 2, 3};
+int[] b = new int[a.length];
+
+for (int i = 0; i < a.length; i++) {
+    b[i] = a[i];
+}
+```
+
+🧠 Memoria:
+
+```bash
+{a → [1][2][3]}
+{b → [1][2][3]}
+```
+
+```java
+a[0] = 999;
+```
+
+🧠 Resultado:
+
+```bash
+{a → [999][2][3]}
+{b → [1][2][3]}
+```
+
+✔ Ahora son independientes.
+
+---
+
 ## 🚨 Errores comunes
 
 ❌ Acceder fuera del rango:
@@ -133,11 +204,30 @@ for (int i = 0; i < arr.length; i++) {
 ```java
 arr[10];
 ```
+
 ❌ Intentar cambiar tamaño:
 
 ```java
 arr.length = 10; // NO permitido
 ```
+
 ❌ Olvidar que inicia en 0
 
+❌ Pensar que = copia arreglos
+
 ---
+
+## 🧠 RESUMEN CLAVE
+
+| Concepto     | Explicación        |
+| ------------ | ------------------ |
+| `arr[i]`     | Acceso por índice  |
+| `length`     | Tamaño del arreglo |
+| `=`          | Copia referencia   |
+| `for`        | Recorrer elementos |
+| `new int[n]` | Crear arreglo      |
+
+---
+
+🔥 Regla de oro:
+👉 En Java, los arreglos se manejan por referencia, no por valor.
