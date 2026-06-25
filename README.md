@@ -90,4 +90,5 @@
 - Copia real usando for
 - Concepto de memoria (variables vs arreglos)
 - Diferencia entre copia por valor y por referencia
+- Formas de copiado
 ---

@@ -197,6 +197,44 @@ a[0] = 999;
 
 ---
 
+### 🔹 Copia con Arrays.copyOf
+
+```java
+import java.util.Arrays;
+
+int[] a = {1, 2, 3};
+int[] b = Arrays.copyOf(a, a.length);
+```
+
+🧠 Memoria:
+
+```bash
+{a → [1][2][3]}
+{b → [1][2][3]}
+```
+
+✔ Crea un nuevo arreglo (copia real)
+
+---
+
+### 🔹 Copia con clone()
+
+```java
+int[] a = {1, 2, 3};
+int[] b = a.clone();
+```
+
+🧠 Memoria:
+
+```bash
+{a → [1][2][3]}
+{b → [1][2][3]}
+```
+
+✔ También crea una copia independiente
+
+---
+
 ## 🚨 Errores comunes
 
 ❌ Acceder fuera del rango:
@@ -219,15 +257,19 @@ arr.length = 10; // NO permitido
 
 ## 🧠 RESUMEN CLAVE
 
-| Concepto     | Explicación        |
-| ------------ | ------------------ |
-| `arr[i]`     | Acceso por índice  |
-| `length`     | Tamaño del arreglo |
-| `=`          | Copia referencia   |
-| `for`        | Recorrer elementos |
-| `new int[n]` | Crear arreglo      |
+| Concepto        | Explicación           |
+| --------------- | --------------------- |
+| `arr[i]`        | Acceso por índice     |
+| `length`        | Tamaño del arreglo    |
+| `=`             | Copia referencia      |
+| `for`           | Copia real manual     |
+| `Arrays.copyOf` | Copia real automática |
+| `clone()`       | Copia real rápida     |
+| `new int[n]`    | Crear arreglo         |
 
 ---
 
 🔥 Regla de oro:
+
 👉 En Java, los arreglos se manejan por referencia, no por valor.
+👉 Si usas `=`, NO estás copiando… estás compartiendo.
