@@ -109,12 +109,12 @@ if (a > b) {
 - `||` → OR (o)  
 - `!`  → NOT (negación)  
 
-| A | B |  AND |  OR |  XOR |
-|---|---|----------|---------|---------|
-| T | T | T        | T       | F       |
-| T | F | F        | T       | T       |
-| F | T | F        | T       | T       |
-| F | F | F        | F       | F       |
+| A | B |  AND |  OR |  XOR | == |
+|---|---|----------|---------|---------|--------|
+| T | T | T        | T       | F       |T       |
+| T | F | F        | T       | T       |F       |
+| F | T | F        | T       | T       |F       |
+| F | F | F        | F       | F       |T       |
 
 ### 🔍 Ejemplos
 
@@ -127,6 +127,14 @@ if (a > b || a > c) { }
 
 // NOT
 if (!(x > 10)) { }
+
+// == 
+if(true == false){ //FALSE
+}
+
+if(false == false){ //TRUE
+}
+
 ```
 
 ---
