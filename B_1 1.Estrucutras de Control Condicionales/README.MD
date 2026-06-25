@@ -127,6 +127,14 @@ if (a > b || a > c) { }
 
 // NOT
 if (!(x > 10)) { }
+
+// == 
+if(true == false){ //FALSE
+}
+
+if(false == false){ //TRUE
+}
+
 ```
 
 ---
