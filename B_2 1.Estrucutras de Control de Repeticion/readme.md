@@ -1,9 +1,5 @@
 # 🔁 Repetición (Estructuras de Control)
 
-Parte de: `estructuras_de_control`
-
----
-
 # 🧠 ¿Qué es?
 
 Permiten ejecutar un bloque de código varias veces según una condición.
