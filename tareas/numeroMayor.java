@@ -9,6 +9,7 @@ public class numeroMayor {
 				x = arr[i];
 			}
 		}
+
 		System.out.println("El numero mayor es:" + x);
 
 	}
