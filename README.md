@@ -7,9 +7,8 @@
 ├───A_1 3.Operadores Logicos y Aritmeticos
 │
 ├───B_1 1.Estrucutras de Control Condicionales
-│
-├───B_2 1.Estrucutras de Control de Repeticion
-├───B_2 2.Convertir el ciclo de un diagrama en un for
+├───B_1 1.Estrucutras de Control de Repeticion
+├───B_1 2.Convertir el ciclo de un diagrama en un for
 │
 ├───C_1 1.Arreglos
 │
@@ -69,8 +68,8 @@
 ---
 
 ### Ciclos
-📁 B_2 1.Estrucutras de Control de Repeticion  
-📁 B_2 2.Convertir un diagrama en un for  
+📁 B_1 2.Estrucutras de Control de Repeticion  
+📁 B_1 3.Convertir un diagrama en un for  
 
 - Estructuras de repetición (`for`, `while`, `do-while`)  
 - Diferencias entre `while`, `do-while`  y `for`
